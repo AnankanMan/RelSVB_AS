@@ -1,0 +1,9 @@
+.close {
+    opacity: 0;
+    height: 0;
+}
+
+.open {
+    opacity: 1;
+    height: 100%;
+}

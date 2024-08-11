@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="toggle.css">
+</head>
+
+<script src="toggle.js"></script>
+
+<body onload="close();">
+    <script src="script.js"></script>
+    <h1>The Relationship Between Short-Video-Based Social Media Use and Attention Span</h1>
+    <form action="" method="post">
+        ID Search: <input type="text" id="idText"><button onclick="idSearch(); return false;">Submit</button>
+    </form>
+    <hr>
+    Advanced Search<button onclick="toggle()" id="toggleButton">Open</button>
+    <hr>
+    <form action="" method="post" id="searchList">
+        Language:
+        <select name="lang" id="lang">
+            <option value="0">-</option>
+            <option value="1">English</option>
+            <option value="2">Thai</option>
+        </select> <br>
+        Age: 
+        <select name="age" id="age">
+            <option value="0">-</option>
+            <option value="1">1-9 years old</option>
+            <option value="2">10-13 years old</option>
+            <option value="3">14-19 years old</option>
+            <option value="4">20-27 years old</option>
+            <option value="5">28-43 years old</option>
+            <option value="6">44-59 years old</option>
+            <option value="7">60 or more years old</option>
+        </select> <br>
+        Gender:
+        <select name="gender" id="gender">
+            <option value="0">-</option>
+            <option value="1">Male</option>
+            <option value="2">Fale</option>
+            <option value="3">Prefer Not To Play</option>
+        </select> <br>
+        Education:         
+        <select name="edu" id="edu">
+            <option value="0">-</option>
+            <option value="1">Primary</option>
+            <option value="2">Secondary</option>
+            <option value="3">High School</option>
+            <option value="4">Bachelor's Degree (both pursuing and graduated)</option>
+            <option value="5">Higher (both pursuing and graduated)</option>
+        </select> <br>
+        Medical History: 
+            <label for="1">No</label> <input type="checkbox" id="mh1"> 
+            <label for="2">Anxiety</label> <input type="checkbox" id="mh2"> 
+            <label for="3">ADHD</label> <input type="checkbox" id="mh3"> 
+            <label for="4">Autism</label> <input type="checkbox" id="mh4"> 
+            <label for="5">SAD and PTSD</label> <input type="checkbox" id="mh5"> 
+            <label for="6">Depression</label> <input type="checkbox" id="mh6"> 
+            <label for="7">OCD</label> <input type="checkbox" id="mh7"> <br>
+        Home: <select name="home" id="home">
+            <option value="0">-</option>
+            <option value="1">Bangkok Metropolitan Area, Thailand</option>
+            <option value="2">Outside Bangkok Metropolitan Area, Thailand</option>
+            <option value="3">Other</option>
+        </select> <br> <br>
+        App: 
+        <select name="app" id="app">
+            <option value="0">-</option>
+            <option value="1">TikTok</option>
+            <option value="2">Instagram</option>
+            <option value="3">Twitter (X)</option>
+            <option value="4">Facebook</option>
+            <option value="5">YouTube</option>
+            <option value="6">LOFTER</option>
+            <option value="7">Discord</option>
+        </select>
+         <br>
+        Purpose of Use: <select name="appPp" id="appPp">
+            <option value="0">-</option>
+            <option value="1">Entertainment</option>
+            <option value="2">Political and global situations (News)</option>
+            <option value="3">Seeing what's going on in your social circles</option>
+            <option value="4">Running and promoting business</option>
+        </select> <br>
+        Time spent a day: 
+        <select name="usage" id="usage">
+            <option value="0">-</option>
+            <option value="1">Less than 2 hours</option>
+            <option value="2">2-5 hours</option>
+            <option value="3">5-8 hours</option>
+            <option value="4">8 or more hours</option>
+        </select>
+        <br>
+        Content Length: <select name="mediaLength" id="mediaLength">
+            <option value="0">-</option>
+            <option value="1">Long (≥ 2 minutes & < 5 minutes)</option>
+            <option value="2">Short (< 2 minutes)</option>
+        </select><br>
+        Start watching: <select name="start" id="start">
+            <option value="0">-</option>
+            <option value="1">Less than a year</option>
+            <option value="2">1-2 years ago</option>
+            <option value="3">3-4 years ago</option>
+            <option value="4">4 years or more</option>
+            <option value="5">I have no idea</option>
+        </select><br>
+        <h5>Section 1</h5>
+        Q1: <select name="q11" id="q11">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q2: <select name="q12" id="q12">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q3: <select name="q13" id="q13">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q4: <select name="q14" id="q14">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q5: <select name="q15" id="q15">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q6: <select name="q16" id="q16">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        <h5>Section 2</h5>
+        Q1: <select name="q21" id="q21">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q2: <select name="q22" id="q22">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q3: <select name="q23" id="q23">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q4: <select name="q24" id="q24">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q5: <select name="q25" id="q25">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q6: <select name="q26" id="q26">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        <h5>Section 3</h5>
+        Q1: <select name="q31" id="q31">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q2: <select name="q32" id="q32">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q3: <select name="q33" id="q33">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q4: <select name="q34" id="q34">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        Q5: <select name="q35" id="q35">
+            <option value="0">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select> <br>
+        <h5>Submit</h5>
+        <button id="advancedSearch" onclick="match();" type="button">Submit</button>
+        <hr>
+    </form>
+    <p id="advancedResult">Count for Advanced Search: </p>
+        <hr>
+        <div id="idResult">
+            <h2>ID Search Result</h6>
+            <p id="id"></p>
+            <p id="lang"></p>
+            <p id="age"></p>
+            <p id="gender"></p>
+            <p id="edu"></p>
+            <p id="mh"></p>
+            <p id="home"></p>
+            <p id="app"></p>
+            <p id="appPp"></p>
+            <p id="usage"></p>
+            <p id="mediaLength"></p>
+            <p id="start"></p>
+            <p id="q11"></p>
+            <p id="q12"></p>
+            <p id="q13"></p>
+            <p id="q14"></p>
+            <p id="q15"></p>
+            <p id="q16"></p>
+            <p id="q21"></p>
+            <p id="q22"></p>
+            <p id="q23"></p>
+            <p id="q24"></p>
+            <p id="q25"></p>
+            <p id="q26"></p>
+            <p id="q31"></p>
+            <p id="q32"></p>
+            <p id="q33"></p>
+            <p id="q34"></p>
+            <p id="q35"></p>
+        </div>
+</body>
+</html>
