@@ -115,7 +115,7 @@ const match = () => {
                 if(query.age == 0 || el.age == query.age) {i++; } 
                 if(query.gender == 0 || el.gender == query.gender) {i++; } 
                 if(query.edu == 0 || el.edu == query.edu) {i++; } 
-                if(query.mh.length == 0 || setAB(mh, query.length)) {i++;} 
+                if(query.mh.length == 0 || setAB(el.mh, query.mh)) {i++;} 
                 if(query.home == 0 || el.home == query.home) {i++; } 
                 if(query.app == 0 || el.app == query.app) {i++; } 
                 if(query.appPp == 0 || el.appPp == query.appPp) {i++; } 
