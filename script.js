@@ -193,6 +193,7 @@ const translate = (data) => {
         case 2: data.app = 'Instagram'; break;
         case 3: data.app = 'Twitter (X)'; break;
         case 4: data.app = 'Facebook'; break;
+        case 5: data.app = 'YouTube'; break;
     }
     switch (data.appPp) {
         case 1: data.appPp = 'Entertainment'; break;
