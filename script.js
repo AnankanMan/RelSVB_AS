@@ -139,7 +139,7 @@ const match = () => {
                 if(query.q34 == 0 || el.q34 == query.q34) {i++; }
                 if(query.q35 == 0 || el.q35 == query.q35) {i++; }
                 console.log(i);
-                if(i==27) { list++; idList = `${idList}, ${data.indexOf(el)}` };
+                if(i==27) { list++; idList = `${idList}, ${data.indexOf(el) + 1}` };
             }
             advancedResult.innerHTML = `Matched count(s): ${list} <br/> Matched IDS: [${idList.substring(1)}]`;
     })
