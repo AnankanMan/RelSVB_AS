@@ -141,7 +141,7 @@ const match = () => {
                 console.log(i);
                 if(i==27) { list++; idList = `${idList}, ${data.indexOf(el) + 1}` };
             }
-            advancedResult.innerHTML = `Matched count(s): ${list} <br/> Matched IDS: [${idList.substring(1)}]`;
+            advancedResult.innerHTML = `Matched count(s): ${list} (${(parseFloat(list))/(parseFloat(el.length)) * 100}%) <br/> Matched IDS: [${idList.substring(1)}]`;
     })
 }
 
